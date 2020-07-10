@@ -1,0 +1,18 @@
+
+version: '3'
+
+services:
+  webserver:
+    build: .
+    image: webserver-test
+    container_name: nginx-webserver
+    restart: always 
+    ports:
+      - '8080:80'
+    volumes:
+      - /app/node_modules
+      - .:/app
+    environment:
+      - NODE_ENV=production
+      - GATSBY_WEBPACK_PUBLICPATH=/
+
