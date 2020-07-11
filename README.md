@@ -2,7 +2,7 @@
   thedevportfolio.xyz - Me
 </h1>
 <p align="center">
-  The fourth iteration of <a href="https://thedevportfolio.xyz" target="_blank">thedevportfolio.xyz</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+  My site is live on <a href="https://thedevportfolio.xyz" target="_blank">thedevportfolio.xyz</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
 <p align="center">
   <a href="https://app.netlify.com/sites/moew/deploys" target="_blank">
