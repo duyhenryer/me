@@ -50,6 +50,26 @@
    npm run serve
    ```
 
+## 🛠 Setup with Docker
+
+1. Install Docker Engine and Docker-compose via [Docs](https://docs.docker.com/engine/install/)
+
+2. Clone repo.
+   
+   ```sh
+   git clone https://github.com/duyhenryer/me.git
+   ```
+3. Run Docker-compose
+
+   ```sh
+   docker-compose up -d
+   ```
+4. Preview the site on Website via localhost.
+
+   ```sh
+   http://localhost:8080
+   ```
+
 ## 🎨 Color Reference
 
 | Color          | Hex                                                                |
