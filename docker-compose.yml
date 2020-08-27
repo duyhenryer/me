@@ -13,4 +13,3 @@ services:
       - .:/app
     environment:
       - NODE_ENV=production
-      - GATSBY_WEBPACK_PUBLICPATH=/

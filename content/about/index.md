@@ -2,7 +2,7 @@
 title: 'About Me'
 avatar: './me.jpg'
 skills:
-  - AWS (EC2, S3, IAM, Codecommit, Route53, VPC, ELB)
+  - AWS (EC2, S3, IAM, Codecommit, Route53, VPC, EKS)
   - Google Cloud (VPS)
   - Bash Shell, Python, Java
   - Jenkins
