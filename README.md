@@ -1,5 +1,5 @@
 <h1 align="center">
-  thedevportfolio.xyz - Me
+  thedevportfolio.xyz --- Me
 </h1>
 <p align="center">
   My site is live on <a href="https://thedevportfolio.xyz" target="_blank">thedevportfolio.xyz</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
