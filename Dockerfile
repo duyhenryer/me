@@ -21,4 +21,5 @@ RUN npm run build
 # Stage 2: Serve the site
 FROM nginx
 WORKDIR /app
-COPY --from=0 /app/public /usr/share/nginx/html/
+COPY --from=0 /app/public /var/www/html
+#/usr/share/nginx/html/
