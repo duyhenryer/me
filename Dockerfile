@@ -1,11 +1,5 @@
 # Stage 1: Build Gatsby
 FROM node:14
-RUN \
-  apk add --no-cache python make g++ && \
-  apk add vips-dev fftw-dev --update-cache \
-  --repository http://dl-3.alpinelinux.org/alpine/edge/community \
-  --repository http://dl-3.alpinelinux.org/alpine/edge/main \
-  && rm -fR /var/cache/apk/*
 
 WORKDIR /app
 
