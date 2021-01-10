@@ -3,10 +3,11 @@ title: 'About Me'
 avatar: './me.jpg'
 skills:
   - AWS (EC2, S3, IAM, Codecommit, Route53, VPC, EKS)
-  - Google Cloud (VPS)
+  - Google Cloud Platform
   - Bash Shell, Python, Java
-  - Jenkins
-  - Git, Docker, Kubernetes
+  - Jenkins, Github Action
+  - Docker, Kubernetes, Helm
+  - GitOps(fluxcd)
 ---
 
 Hello! I'm Duy, a devops engineer based in Ho Chi Minh, VN.
