@@ -48,4 +48,4 @@ jobs:
           chmod 600 id_rsa
       - name: Pull image and start docker-compose
         run: |
-          ssh -o StrictHostKeyChecking=no -i id_rsa root@${{ secrets.IP }} 'cd /data/me && docker-compose pull && docker-compose up -d'
+          ssh -o StrictHostKeyChecking=no -i id_rsa root@$34.121.16.76 'cd /data/me && docker-compose pull && docker-compose up -d'
