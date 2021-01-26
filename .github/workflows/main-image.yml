@@ -5,11 +5,13 @@ on:
   push:
     branches:
       - master
-  workflow_dispatch:
     # paths:
     #   - '**.py'
-    # tags:
-    #     - "v*.*"
+    tags:
+        - "v*.*"
+  
+  workflow_dispatch:
+
     # git tag -a v1.0
     # git push origin v1.0
 
@@ -32,3 +34,17 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: duyhenryer/me
           tag_with_sha: true
+  deploy:
+    name: Deploy to server
+    runs-on: ubuntu-latest
+    needs: [build]
+    steps:
+      - name: setup ssh
+        env:
+          PRIV_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        run: |
+          echo "$PRIV_KEY" > id_rsa
+          chmod 600 id_rsa
+      - name: Pull image and start docker-compose
+        run: |
+          ssh -o StrictHostKeyChecking=no -i id_rsa root@${{ secrets.IP }} 'cd /data/me && docker-compose pull && docker-compose up -d'
