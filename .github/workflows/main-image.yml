@@ -40,9 +40,11 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Build image
-        run: |
-            docker build --tag ${{ secrets.DOCKERHUB_USERNAME }}:me . --no-cache
-      - name: Push image to DockerHub Registry
-        run: |
-            docker push ${{ secrets.DOCKERHUB_USERNAME }}:me
+      - name: Build and push
+        id: docker_build
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/me
