@@ -42,7 +42,7 @@ jobs:
 
       - name: Build image
         run: |
-            docker build --tag ${{ secrets.DOCKER_USERNAME }}:me . --no-cache
+            docker build --tag ${{ secrets.DOCKERHUB_USERNAME }}:me . --no-cache
       - name: Push image to DockerHub Registry
         run: |
-            docker push ${{ secrets.DOCKER_USERNAME }}:me
+            docker push ${{ secrets.DOCKERHUB_USERNAME }}:me
