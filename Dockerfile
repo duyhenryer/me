@@ -14,5 +14,6 @@ RUN npm run build
 # Stage 2: Serve the site
 FROM nginx
 WORKDIR /app
+COPY default.conf /etc/nginx/conf.d/
 COPY --from=0 /cache/public /var/www/html
 #/usr/share/nginx/html/
