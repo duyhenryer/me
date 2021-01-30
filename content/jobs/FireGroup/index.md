@@ -3,7 +3,7 @@ date: '2020-18-05'
 title: 'System Engineer'
 company: 'FireGroup'
 location: 'Ho Chi Minh City, VN'
-range: 'May- Present  2020'
+range: 'May 2020 - Present'
 url: 'https://fireapps.vn/'
 ---
 
