@@ -5,7 +5,7 @@ skills:
   - AWS (EC2, S3, IAM, Codecommit, Route53, VPC, EKS)
   - Google Cloud Platform
   - Bash Shell, Python, Java
-  - Jenkins, Github Action
+  - Jenkins, Github Action, Gitlab CI/CD
   - Docker, Kubernetes, Helm
   - GitOps(fluxcd)
 ---
