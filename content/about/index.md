@@ -10,7 +10,7 @@ skills:
   - GitOps(fluxcd)
 ---
 
-Hello! I'm Duy, a devops engineer based in Ho Chi Minh, VN.
+Hello! I'm Duy, a system engineer based in Ho Chi Minh City, Viet Nam.
 
 I enjoy creating things on the internet, for everything. My goal is to always deploy the products that provide user experience with perfect performance.
 
